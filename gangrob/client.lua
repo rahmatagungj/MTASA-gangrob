@@ -12,6 +12,7 @@ function clientRob(player,intid)
 	number = 0 
 	players = player
 	newintid = intid
+	newClick = getTickCount()
 	 timer = setTimer(theTimer,60,0)
 end
 	addEventHandler("tryingRobHouse",root,clientRob)
