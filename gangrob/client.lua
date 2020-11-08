@@ -28,3 +28,7 @@ end
 			end 
 	end
 
+
+	local police = function() 
+		outputChatBox("abcdefghi")			
+	end
