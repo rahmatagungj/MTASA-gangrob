@@ -47,7 +47,7 @@ end)
 	
 
 function triggerCops()
-	local theTeam = getTeamFromName("Los Santos Police Departament")
+	local theTeam = getTeamFromName("Kepolisian Republic City")
 		local teamPlayers = getPlayersInTeam(theTeam)
 		for key, value in ipairs(teamPlayers) do
 		local duty = tonumber(getElementData(value, "duty"))
