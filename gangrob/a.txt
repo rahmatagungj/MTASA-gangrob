@@ -8,5 +8,13 @@
 
 -- INI GARIS BARU
 =======
+<<<<<<< HEAD
 >>>>>>> f0377ac34eb80f65f14dde1d131fc9d8dd3293aa
 >>>>>>> fdcb32c220ed30e7d46ff0f0ff0398c04789e8d5
+=======
+
+
+
+
+=== UDIN 
+>>>>>>> 9b31f5896050429d03f973ce768cf848868379cf
