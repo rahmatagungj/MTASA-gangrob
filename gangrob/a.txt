@@ -1,5 +1,9 @@
 
+<<<<<<< HEAD
 ini adalah baris pertama Albert
+=======
+ini adalah baris pertama Math
+>>>>>>> 15e8bf35b2355d7d1c445bfbab312b736d0981cc
 
 
 
