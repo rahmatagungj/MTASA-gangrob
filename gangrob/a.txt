@@ -1,8 +1,0 @@
-<<<<<<< HEAD
-Halo ini adalah buatan rahmat
-
-
-dan ini baris kedua buatan rahmat
-=======
---Republic City--
->>>>>>> 8df2f2156aaa24e8383188a22ccae7cb500ff93d
