@@ -10,11 +10,8 @@ ini adalah baris pertama Math
 
 ini adalah baris kedua rahmat
 
-hello
+Welcome "republic" 
 
-
-
-world
 
 republic
 
