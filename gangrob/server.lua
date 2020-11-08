@@ -13,6 +13,7 @@ addEventHandler("areYouFromGang",root,function(player)
 		end
 	end)
 
+
 addEvent("robHouse",true)
 function robbing(player,intid)
 	--local intid = 14
@@ -23,10 +24,10 @@ function robbing(player,intid)
 			if exports.factions:getFactionType(factionID) == 0 then
 				triggerClientEvent(player,"tryingRobHouse",player,player,intid)
 			else
-				outputChatBox("Jums jābūt bandā lai veiktu tādas darbības",player)
+				outputChatBox("kamu harus menjadi anggota geng untuk melakukan rob toko",player)
 			end
 		else
-			outputChatBox("Jūs neesat nevienā frakcijā, jums jābūt bandā lai laupītu īpašumus",player)
+			outputChatBox("kamu bukan anggota geng mana pun, kamu harus tergabung dalam geng untuk melakukan rob toko",player)
 		end
 	end
 end
@@ -38,23 +39,23 @@ function finishRob(player,intid)
 		local success = math.random(1,2)
 		local police = math.random(1,3)
 		if success == 1 then -- izdodas atlauzt
-			outputChatBox("Tu atlauzi vaļā durvis",player)
+			outputChatBox("kamu masuk kedalam toko",player)
 			if police == 1 then
-				outputChatBox("Signalizācija ir sākusi skanēt! Tev nav daudz laiks pirms ieradīsies policija",player)
+				outputChatBox("Alarm peringatan berbunyi! kamu tidak punya banyak waktu sebelum polisi tiba",player)
 				triggerCops()
 			elseif police == 2 then
-				outputChatBox("Mājā izrādijās novērošanas kameras, tava seja ir piefiksēta!",player)
+				outputChatBox("Kamera CCTV sudah memantau, wajah kamu sudah terdeteksi!",player)
 			else
-				outputChatBox("Signalizācija nav sākusi skanēt",player)
+				outputChatBox("Alarm belum berbunyi",player)
 			end
 		end
 		if success == 2 then
-			outputChatBox("Tev neizdevās atlauzt vaļā durvis",player)
+			outputChatBox("kamu gagal membuka pintu",player)
 			if police == 1 then
-				outputChatBox("Signalizācija ir sākusi skanēt! Tev nav daudz laika pirms ieradīsies policija!",player)
+				outputChatBox("Alarm peringatan berbunyi! kamu tidak punya banyak waktu sebelum polisi tiba!",player)
 				triggerCops()
 			else 
-				outputChatBox("Signalizācija nav sākusi skanēt",player)
+				outputChatBox("Alarm belum berbunyi",player)
 			end
 		end
 
