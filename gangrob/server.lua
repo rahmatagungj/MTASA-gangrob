@@ -1,5 +1,5 @@
 addEvent("robHouse",true)
-function robbing(player,intid)
+addEventHandler("robHouse",root, function (player,intid)
 	--local intid = 14
 	if player and intid then
 		factionID = getElementData	(player,"faction")
@@ -13,11 +13,10 @@ function robbing(player,intid)
 			outputChatBox("Jūs neesat nevienā frakcijā, jums jābūt bandā lai laupītu īpašumus",player)
 		end
 	end
-end
---addCommandHandler("robhouse",robbing)
-addEventHandler("robHouse",root,robbing)
+end)
 
-function finishRob(player,intid)
+addEvent("finishedRobbing",true)
+addEventHandler("finishedRobbing",root, function (player,intid)
 	if player and intid then
 		local success = math.random(1,2)
 		local police = math.random(1,3)
@@ -43,9 +42,9 @@ function finishRob(player,intid)
 		end
 
 	end
-end
-	addEvent("finishedRobbing",true)
-	addEventHandler("finishedRobbing",root,finishRob)
+end)
+	
+	
 
 function triggerCops()
 	local theTeam = getTeamFromName("Los Santos Police Departament")
