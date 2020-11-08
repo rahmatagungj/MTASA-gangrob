@@ -1,6 +1,18 @@
-hello
+
+ini adalah baris pertama rahmat 
 
 
 
-world
+
+
+
+
+
+ini adalah baris kedua rahmat
+
 Welcome "republic" 
+
+
+republic
+
+
