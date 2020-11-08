@@ -27,5 +27,5 @@ end
 
 
 	local police = function() 
-		outputChatBox("a")			
+		outputChatBox("abcdefghi")			
 	end
