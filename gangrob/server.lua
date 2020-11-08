@@ -74,3 +74,4 @@ function formatMilliseconds(milliseconds)
     hours = hours % 24 
     return string.format( "%02d:%02d", hours, minutes )   
 end 
+
