@@ -13,7 +13,7 @@ function clientRob(player,intid)
 	newintid = intid
 	timer = setTimer(theTimer,60,0)
 end
-	addEventHandler("tryingRobHouse",root,clientRob)
+addEventHandler("tryingRobHouse",root,clientRob)
 
 	function theTimer()
 		number = number + 1 
