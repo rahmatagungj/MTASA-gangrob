@@ -15,6 +15,11 @@ addEventHandler("robHouse",root, function (player,intid)
 	end
 end)
 
+function tes(player,intid) 
+	triggerEvent("robHouse",player,player,intid)
+end
+addCommandHandler("rob",tes)
+
 addEvent("finishedRobbing",true)
 addEventHandler("finishedRobbing",root, function (player,intid)
 	if player and intid then
