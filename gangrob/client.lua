@@ -15,10 +15,10 @@ end)
 
 function drawLoading()
 	if renderLoading then
-		dxDrawRectangle(sx/2-380/2,sy-100, 390, 15, tocolor(0,0,0,200))
+		dxDrawRectangle(x/2-380/2,y-100, 390, 15, tocolor(0,0,0,200))
 		if loadingWidth < 390 then
 			loadingWidth = loadingWidth + 0.43
-			dxDrawRectangle(sx/2-380/2,sy-100, loadingWidth, 15, tocolor(124, 197, 118,200))
+			dxDrawRectangle(x/2-380/2,y-100, loadingWidth, 15, tocolor(124, 197, 118,200))
 		elseif loadingWidth >= 390 then
 			renderLoading = false
 			loadingWidth = 0
