@@ -3,7 +3,6 @@ loadstring(exports.dgs:dgsImportFunction())() -- init DGS PLUGIN
 local x,y = guiGetScreenSize()
 players = nil
 newintid = nil
-newTick = nil
 addEvent("tryingRobHouse",true)
 
 function clientRob(player,intid)
@@ -12,8 +11,7 @@ function clientRob(player,intid)
 	number = 0 
 	players = player
 	newintid = intid
-	newClick = getTickCount()
-	 timer = setTimer(theTimer,60,0)
+	timer = setTimer(theTimer,60,0)
 end
 	addEventHandler("tryingRobHouse",root,clientRob)
 
@@ -26,9 +24,4 @@ end
 				killTimer(timer)
 				triggerServerEvent("finishedRobbing",players,players,newintid)
 			end 
-	end
-
-
-	local police = function() 
-		outputChatBox("abcdefghi")			
 	end
