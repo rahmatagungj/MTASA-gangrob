@@ -5,7 +5,7 @@ newintid = nil
 newTick = nil
 addEvent("tryingRobHouse",true)
 function clientRob(player,intid)
-	text = dgsCreateLabel((x/2)-158, y-230,317,43,"Notiek uzlaušana",false)
+	text = dgsCreateLabel((x/2)-158, y-230,317,43,"Perampokan sedang berlangsung",false)
 	progressbar = dgsCreateProgressBar((x/2)-158, y-200, 317, 43, false)    
 	number = 0 
 	players = player
