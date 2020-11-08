@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 addEvent("areYouFromGang",true)
 addEventHandler("areYouFromGang",root,function(player)
 		if player then
@@ -14,14 +15,15 @@ addEventHandler("areYouFromGang",root,function(player)
 	end)
 
 
+=======
+>>>>>>> 943ba03aa8f51fd3ad6e7c5199022f4778f77061
 addEvent("robHouse",true)
-function robbing(player,intid)
+addEventHandler("robHouse",root, function (player,intid)
 	--local intid = 14
-	outputDebugString("test")
 	if player and intid then
 		factionID = getElementData	(player,"faction")
 		if factionID then
-			if exports.factions:getFactionType(factionID) == 0 then
+			if exports.factions:getFactionType(factionID) == 0 then --HANYA UNTUK GANG
 				triggerClientEvent(player,"tryingRobHouse",player,player,intid)
 			else
 				outputChatBox("kamu harus menjadi anggota geng untuk melakukan rob toko",player)
@@ -30,11 +32,10 @@ function robbing(player,intid)
 			outputChatBox("kamu bukan anggota geng mana pun, kamu harus tergabung dalam geng untuk melakukan rob toko",player)
 		end
 	end
-end
---addCommandHandler("robhouse",robbing)
-addEventHandler("robHouse",root,robbing)
+end)
 
-function finishRob(player,intid)
+addEvent("finishedRobbing",true)
+addEventHandler("finishedRobbing",root, function (player,intid)
 	if player and intid then
 		local success = math.random(1,2)
 		local police = math.random(1,3)
@@ -60,9 +61,9 @@ function finishRob(player,intid)
 		end
 
 	end
-end
-	addEvent("finishedRobbing",true)
-	addEventHandler("finishedRobbing",root,finishRob)
+end)
+	
+	
 
 function triggerCops()
 	local theTeam = getTeamFromName("Los Santos Police Departament")
