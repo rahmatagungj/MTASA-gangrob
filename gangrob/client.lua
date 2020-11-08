@@ -26,8 +26,3 @@ end
 				triggerServerEvent("finishedRobbing",players,players,newintid)
 			end 
 	end
-
-
-	local police = function() 
-		outputChatBox("abcdefghi")			
-	end
