@@ -1,26 +1,10 @@
-addEvent("areYouFromGang",true)
-addEventHandler("areYouFromGang",root,function(player)
-		if player then
-			factionID = getElementData(player,"faction")
-			if factionID then
-				if exports.factions:getFactionType(factionID) == 0 then
-					triggerClientEvent(client, "sendBackGang", resourceRoot, true) 
-					outputDebugString("true gang sht works")
-				else
-					triggerClientEvent(client, "sendBackGang", resourceRoot, false) 
-				end
-			end
-		end
-	end)
-
 addEvent("robHouse",true)
 function robbing(player,intid)
 	--local intid = 14
-	outputDebugString("test")
 	if player and intid then
 		factionID = getElementData	(player,"faction")
 		if factionID then
-			if exports.factions:getFactionType(factionID) == 0 then
+			if exports.factions:getFactionType(factionID) == 0 then --HANYA UNTUK GANG
 				triggerClientEvent(player,"tryingRobHouse",player,player,intid)
 			else
 				outputChatBox("Jums jābūt bandā lai veiktu tādas darbības",player)
