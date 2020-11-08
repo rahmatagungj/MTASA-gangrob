@@ -1,22 +1,3 @@
-<<<<<<< HEAD
-addEvent("areYouFromGang",true)
-addEventHandler("areYouFromGang",root,function(player)
-		if player then
-			factionID = getElementData(player,"faction")
-			if factionID then
-				if exports.factions:getFactionType(factionID) == 0 then
-					triggerClientEvent(client, "sendBackGang", resourceRoot, true) 
-					outputDebugString("true gang sht works")
-				else
-					triggerClientEvent(client, "sendBackGang", resourceRoot, false) 
-				end
-			end
-		end
-	end)
-
-
-=======
->>>>>>> 943ba03aa8f51fd3ad6e7c5199022f4778f77061
 addEvent("robHouse",true)
 addEventHandler("robHouse",root, function (player,intid)
 	--local intid = 14
