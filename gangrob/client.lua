@@ -2,6 +2,7 @@ loadstring(exports.dgs:dgsImportFunction())()
 local x,y = guiGetScreenSize()
 players = nil
 newintid = nil
+newTick = nil
 addEvent("tryingRobHouse",true)
 function clientRob(player,intid)
 	text = dgsCreateLabel((x/2)-158, y-230,317,43,"Notiek uzlaušana",false)
