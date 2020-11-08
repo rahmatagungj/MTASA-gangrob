@@ -52,7 +52,7 @@ function triggerCops()
 		for key, value in ipairs(teamPlayers) do
 		local duty = tonumber(getElementData(value, "duty"))
 			if (duty>0) then
-			--	outputChatBox("[RADIO] Visām vienībām, " .. areaName .. ".", value, 255, 194, 14)
+			--	outputChatBox("[RADIO] Untuk semua unit, " .. areaName .. ".", value, 255, 194, 14)
 			--	outputChatBox("[RADIO] Vehicle was a ", value, 255, 194, 14)
 			--	outputChatBox("[RADIO] The plate is '"..  getVehiclePlateText ( theVehicle ) .."' and heading " .. direction .. ".", value, 255, 194, 14)
 			end
